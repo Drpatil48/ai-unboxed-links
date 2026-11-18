@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reels With Claude: prompts</title><meta name="description" content="Every prompt from the @ai_unboxed.in reel, ready to copy.">
+<style>
+:root{--bg:#f6f5fb;--card:#fff;--ink:#16141f;--muted:#5d5a6b;--line:#e6e3f0;--code:#f1eff8;--accent:#6d4aff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0e14;--card:#1a1823;--ink:#f2f0f8;--muted:#a9a5b8;--line:#2c2939;--code:#12111a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,system-ui,Segoe UI,Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:28px 16px 48px}h1{font-size:26px;margin:0 0 6px;line-height:1.25}
+.sub{color:var(--muted);margin:0 0 20px}a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 14px}
+h2{font-size:14px;letter-spacing:.05em;margin:0 0 8px;color:var(--accent)}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 10px;background:var(--code);border-radius:10px;padding:12px;font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+button{background:var(--accent);color:#fff;border:0;border-radius:999px;padding:8px 18px;font:600 14px system-ui,sans-serif;cursor:pointer}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
+</style></head><body><main>
+  <h1>Reels With Claude: prompts</h1><p class="sub">Tap <b>Copy</b>, paste into Claude, and replace the [brackets] with your details.</p>
+  
+  <section class="card"><h2>STEP 1 · SETUP</h2>
+    <pre id="b0">1. Make a folder called &quot;AI Video Editor&quot; in Documents.
+2. Download the Claude desktop app: claude.com/download (not the browser, it can&#x27;t install software).
+3. Open the app → Code tab → choose your AI Video Editor folder.
+
+Then paste the prompts below one by one. Replace the [brackets] with your own details. 👇</pre><button type="button" data-copy="b0">Copy</button>
+  </section>
+  <section class="card"><h2>PROMPT 1 · INSTALL</h2>
+    <pre id="b1">I want to make Instagram Reels (1080x1920 videos) with code, inside this folder. Set everything up for me, step by step:
+1. Check my computer (Mac or Windows) and install whatever is missing: Node.js (LTS), FFmpeg and Python 3.
+2. Create a Remotion project in this folder (TypeScript, blank template).
+3. Install the free, offline Kokoro text-to-speech voice in a Python virtual environment.
+4. Install Whisper (whisper.cpp or openai-whisper) so we can make word-timed captions.
+5. Test each tool with a tiny example and show me a checklist of what is installed.
+Explain each step in simple words. Ask me before anything that needs my password.</pre><button type="button" data-copy="b1">Copy</button>
+  </section>
+  <section class="card"><h2>PROMPT 2 · SCRIPT</h2>
+    <pre id="b2">Write a 45–60 second Instagram Reel script about: [YOUR TOPIC]
+(No topic? Suggest 3 funny comedy topics for an Indian audience, then write the script for the best one.)
+Rules:
+- Language: [Hinglish / Hindi / English], short sentences, max 150 words
+- Hook in the first 3 seconds (curiosity or a surprising true fact)
+- 5–8 short scenes, one idea each
+- End with: &quot;Comment [KEYWORD] and I&#x27;ll DM you ...&quot;
+Give me: the voice lines (for Hindi, write Hindi words in Devanagari and English words in English letters), the on-screen text for each scene, and a list of every fact with its source. Mark anything you can&#x27;t verify.</pre><button type="button" data-copy="b2">Copy</button>
+  </section>
+  <section class="card"><h2>PROMPT 3 · VOICE</h2>
+    <pre id="b3">Make the voiceover for this script with the free Kokoro voice we installed.
+Language: [Hindi / English]. Pick a natural voice (for Hindi try hm_omega or hf_alpha), speed about 1.1–1.2 so every word is clear.
+- Read the script exactly, word for word. Don&#x27;t add or skip words.
+- Make one audio file per scene and one full voiceover.
+- Then run Whisper on it and compare with the script. If any word sounds wrong, add a pronunciation fix and make it again.
+- Save the word timings for the captions.</pre><button type="button" data-copy="b3">Copy</button>
+  </section>
+  <section class="card"><h2>BONUS · CHARACTER</h2>
+    <pre id="b4">Create a 2D cartoon presenter for my reels as a React/SVG component in this Remotion project. Pure code, no images.
+Look: [describe yourself: hair, glasses, beard, clothes and colours]
+He should:
+- blink every few seconds
+- move his mouth in sync with the voiceover (use the word timings or the audio volume)
+- use simple hand gestures: wave, point, thumbs-up, counting on fingers
+Show me a preview image with 4 poses so I can approve the look before we use it.</pre><button type="button" data-copy="b4">Copy</button>
+  </section>
+  <section class="card"><h2>PROMPT 4 · BUILD</h2>
+    <pre id="b5">Build the reel in Remotion from the approved script, voiceover and character.
+- 1080x1920, 30 fps, length = the voiceover length
+- One scene per script line, each with an animation (slide, pop, zoom or typing)
+- Word-by-word captions synced to the voice, with the current word highlighted
+- The character at the bottom, talking during the voice
+- Big, readable text. Brand colours: [your colours]. Handle: [@yourhandle]
+- Last scene: a &quot;Comment [KEYWORD]&quot; box
+Open the preview (Remotion Studio) only. Don&#x27;t render until I say &quot;render now&quot;.</pre><button type="button" data-copy="b5">Copy</button>
+  </section>
+  <section class="card"><h2>STEP 7 · CHANGES</h2>
+    <pre id="b6">Watch the preview and just say what to change, in plain words:
+• make the hook punchier
+• it&#x27;s day, make it night
+• make the captions bigger
+• make the character smaller so he doesn&#x27;t cover the text
+
+STEP 8 · RENDER
+render now. Save the final MP4 in an &quot;Exports&quot; folder, plus a cover image (PNG) and an Instagram caption with hashtags in a .txt file.
+
+Watch it once with sound, then upload. 🎬
+Follow @ai_unboxed.in for more 🚀</pre><button type="button" data-copy="b6">Copy</button>
+  </section>
+  <footer><a href="https://www.instagram.com/reel/Df47-yRDRPL/" target="_blank" rel="noopener">Watch the reel</a> · <a href="../">All links</a> · <a href="https://www.instagram.com/ai_unboxed.in/" target="_blank" rel="noopener">@ai_unboxed.in</a></footer>
+</main>
+<script>
+document.querySelectorAll('button[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+  var t=document.getElementById(b.dataset.copy).innerText;
+  function ok(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy'},1500)}
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fallback)}else{fallback()}
+  function fallback(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();
+    try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(a)}
+})});
+</script></body></html>
